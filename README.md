@@ -23,3 +23,13 @@ Run the R programs `sim-[method name]-s[setting].R` in the `Programs` directory.
 replication number, number of variables selected, number of true signal variables selected, risk correlation, number of clinical variables selected, number of gene modules selected,  number of protein expressions selected, number of miRNA expressions selected, number of mutations selected, number of copy number variations selected, MSE for clinical variables, MSE for gene modules,  MSE for protein expressions, MSE for miRNA expressions, MSE for mutations, MSE for copy number variations
 ```
 Some of the programs may take very long time to run. To save time, one may run the analysis for separate replicates in separate programs and combine the results in output files in the format given above.
+
+## Analysis of TCGA data
+
+Run the bash codes `analysis_splits.sh`, `analysis_splits_cox.sh`, and `analysis_wholedata.sh`. They will create all programs necessary to perform all analyses on the TCGA data sets presented in the paper. Run the created programs in the `Programs` directory. The programs with prefix `DataAnalysis-` in the name will perform the analyses over 30 training/testing data splits using LASSO, elastic net, I-Boost-CV, or I-Boost-Permutation. The results will be written in files in corresponding directories in `Results`. Files with prefix `Model_` in the name contain the selected predictors and the estimated regression parameters, and files with prefix `summary_` in the name contain summaries of the analysis results, including the C-index in the testing set. Upon completion of all analyses, run the program `gather.R` in the `Programs` directory, which will combine `summary_` files.
+
+The programs with prefix `WholeDataAnalysis-` in the name perform the analyses on the whole LUAD, KIRC, or pan-cancer data sets (without setting aside subjects for testing). The selected predictors and estimated regression parameters are written in corresponding directories in `Results/WholeData/`.
+
+## Generation of Figures
+
+Upon completion of all analyses, run the programs `plotFigure1.R`, `plotFigure2and3andS1.R`, `plotFigure4.R`, `plotFigure5.R`, and `plotFigure6.R`. They will generate Figures 1-6 and Figure S1 in `Plots`.
