@@ -111,7 +111,7 @@ for (type in c(1,2,3)) {
 	        for (a in alpha) {
 	                cvm <- rep(0, 100)
 	                for (j in 1:n.repeat.cv) {
-	                        cv.fit.en <- manual.cv.glmnet(train.modules, train.outcome, family="cox", alpha=a, foldid=foldids[[j]], error="cox", naive=TRUE)
+	                        cv.fit.en <- cv_glmnet(train.modules, train.outcome, family="cox", alpha=a, foldid=foldids[[j]], error="cox", naive=TRUE)
 	                        short <- min(length(cvm),length(cv.fit.en\$lambda))
 	                        cvm <- cvm[1:short] + cv.fit.en\$cvm[1:short] / n.repeat.cv
 	                }
