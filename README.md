@@ -22,3 +22,4 @@ Run the R codes `sim-[method name]-s[setting].R` in the `Programs` directory. Ea
 ```
 replication number, number of variables selected, number of true signal variables selected, risk correlation, number of clinical variables selected, number of gene modules selected,  number of protein expressions selected, number of miRNA expressions selected, number of mutations selected, number of copy number variations selected, MSE for clinical variables, MSE for gene modules,  MSE for protein expressions, MSE for miRNA expressions, MSE for mutations, MSE for copy number variations
 ```
+Some of the programs may take very long time to run. One may run the analysis for separate replicates in separate programs and combine the results in output files in the format given above.
