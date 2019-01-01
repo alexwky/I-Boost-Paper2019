@@ -32,4 +32,4 @@ The programs with prefix `WholeDataAnalysis-` in the name perform the analyses o
 
 ## Generation of Figures
 
-Upon completion of all analyses, run the programs `plotFigure1.R`, `plotFigure2and3andS1.R`, `plotFigure4.R`, `plotFigure5.R`, and `plotFigure6.R`. They will generate Figures 1-6 and Figure S1 in `Plots`.
+Upon completion of all analyses, run the programs `plotFigure1.R`, `plotFigure2and3andS1.R`, `plotFigure4.R`, `plotFigure5.R`, and `plotFigure6.R` in `Programs/`. They will generate Figures 1-6 and Figure S1 in `Plots`.
