@@ -6,7 +6,7 @@ The R-package **IBoost** can be found at [https://github.com/alexwky/I-Boost](ht
 
 ## Simulation Studies
 
-Run the bash code `simulations.sh` in the home directory. It creates the directories `SimulationData`, `SimulationResults`, `SimulationSettings`, and R codes in the `Programs` directory. Run the program `sim_setting.R` in the `Programs` directory; it will generate files that contain parameter values for simulating data. Run the program `gendata.R` in the `Programs` directory; it will generate 1,000 simulated data sets for each simulation setting in the directory `SimulationData`. (This step is not necessary for the simulation studies, because the (same) data sets will be generated internally in the simulation programs.) The simulated data sets, named `Data-setting*setting*-*replicate*.csv`, takes the form of:
+Run the bash code `simulations.sh` in the home directory. It creates the directories `SimulationData`, `SimulationResults`, `SimulationSettings`, and R codes in the `Programs` directory. Run the program `sim_setting.R` in the `Programs` directory; it will generate files that contain parameter values for simulating data. Run the program `gendata.R` in the `Programs` directory; it will generate 1,000 simulated data sets for each simulation setting in the directory `SimulationData`. (This step is not necessary for the simulation studies, because the (same) data sets will be generated internally in the simulation programs.) The simulated data sets, named `Data-setting`*setting*`-`*replicate*`.csv`, takes the form of:
 ```
 0.240290380066643,0,276
 0.578869428061267,1,531
