@@ -16,7 +16,7 @@ Run the bash code `simulations.sh` in the home directory. It creates the directo
 .
 .
 ```
-Each row represents the data for a  subject. The first element on each row is the survival or censoring time, the second element is the event indicator that equals 1 or 0 if the event is observed or right-censored, respectively, and the third element is the index of the column in the file `Data/TCGA_8cancer_rmmis.csv` that contains the values of the clinical/genomic predictors of this subject. For instance, a value of `1` for the third element represents that the values of the clinical/genomic predictors of this subject are the same of those of the subject `TCGA.BL.A13I` given in `Data/TCGA_8cancer_rmmis.csv`.
+Each row represents the data for a  subject. The first element on each row is the survival or censoring time, the second element is the event indicator that equals 1 or 0 if the event is observed or right-censored, respectively, and the third element is the index of the column in the file `Data/TCGA_8cancer_rmmis.csv` that contains the values of the clinical/genomic predictors of this subject. For instance, a value of `1` for the third element represents that the values of the clinical/genomic predictors of this subject are the same of those of the subject `TCGA.BL.A13I` given in `Data/TCGA_8cancer_rmmis.csv`. The simulated data sets are contained in `SimulationData.zip` in this directory.
 
 Run the R programs `sim-[method name]-s[setting].R` in the `Programs` directory. Each program performs analysis on 1,000 simulated data sets and output the results in the directory `SimulationResults`. Each row of the output files represent:
 ```
