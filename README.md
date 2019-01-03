@@ -1,4 +1,4 @@
-# I-Boost-Paper2018
+# I-Boost-Paper2019
 
 This directory contains the codes to perform all the analyses and reproduce all the figures presented in the paper: Wong KY, Fan C, Tanioka M, Parker JS, Nobel AB, Zeng D, Lin DY, Perou CM. I-Boost: an integrative boosting approach for predicting survival time with multiple genomics platforms. 2019.
 
