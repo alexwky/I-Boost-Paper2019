@@ -132,6 +132,7 @@ plot.box.strip <- function(data, var1, var2, var3, formula, label, col, ...) {
 pdf("../Plots/Figure5.pdf", width=7, height=14) 
 par(mfrow=c(2,1))
 
+set.seed(123456)
 y.range <- c(-0.3,0.3)
 for (j in 1:2) {
 
