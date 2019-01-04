@@ -4,7 +4,7 @@ This directory contains the codes to perform all the analyses and reproduce all 
 
 The R-package **IBoost** can be found at [https://github.com/alexwky/I-Boost](https://github.com/alexwky/I-Boost).
 
-Before running the codes, download the processed TCGA pan-cancer data set `TCGA_8cancer_rmmis.csv` from [https://doi.org/10.5281/zenodo.2530387] (https://doi.org/10.5281/zenodo.2530387) and store it in the directory `Data/`.
+Before running the codes, download the processed TCGA pan-cancer data set `TCGA_8cancer_rmmis.csv` from [https://doi.org/10.5281/zenodo.2530387](https://doi.org/10.5281/zenodo.2530387) and store it in the directory `Data/`.
 
 ## Simulation Data Sets
 
